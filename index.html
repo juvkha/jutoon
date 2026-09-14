@@ -11,6 +11,17 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
   <body>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <label for="netlify-bot-field">Bot field</label>
+      <input id="netlify-bot-field" name="bot-field" />
+      <label for="netlify-name">Name</label>
+      <input id="netlify-name" name="name" />
+      <label for="netlify-email">Email</label>
+      <input id="netlify-email" name="email" />
+      <label for="netlify-topic">Topic</label>
+      <select id="netlify-topic" name="topic"><option value=""></option></select>
+    </form>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
